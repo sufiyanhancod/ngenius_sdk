@@ -189,7 +189,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
   InAppWebView authenticationWebview() {
     return InAppWebView(
       initialUrlRequest: URLRequest(
-        url: Uri.parse('$authUrl'),
+        url: WebUri('$authUrl'),
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
